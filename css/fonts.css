@@ -1,0 +1,16 @@
+@font-face {
+    font-family: NeueHaasUnicaPro;
+    src: url('../fonts/NeueHaasUnicaPro-Regular.otf');
+    src: url('../fonts/NeueHaasUnicaPro-Light.otf');
+}
+
+@font-face {
+    font-family: SangBleuKingdom;
+    src: url('../fonts/SangBleuKingdom-Light.otf');
+    src: url('../fonts/SangBleuKingdom-Regular.otf');
+}
+
+@font-face {
+    font-family: AGaramondPro;
+    src: url('../fonts/AGaramondPro-Regular.otf');
+}

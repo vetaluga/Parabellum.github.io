@@ -1,0 +1,195 @@
+
+html,body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'SangBleuKingdom', serif;
+	background: #000;
+	color: #fff;
+}
+
+h1,h2{
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px auto 0 auto;
+}
+p{
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+h1{
+	font-size: 92px;
+	z-index: 3;
+	max-width: 810px;
+	line-height: 2.1;
+	letter-spacing: 10px;
+	/*margin-top: 135px;*/
+}
+h2{
+	font-size: 45px;
+}
+h2::after{
+	content: '';
+	position: relative;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	height: 1px;
+	background: #fff;
+	width: 120px;
+}
+
+section{
+	padding: 100px 0;
+	min-height: 600px;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 85px;
+	padding: 0 28px;
+	font-family: 'NeueHaasUnicaPro', sens-serif;
+	position: relative;
+	a{
+		text-decoration: none;
+		padding: 8px;
+		color: #fff;
+		font-size: 15px;
+	}
+	.main-menu{
+		position: relative;
+		&_btn{
+			display: none;
+			width: 30px;
+			height: 30px;
+			background-color: transparent;
+			border: none;
+			font-size: 18px;
+			position: absolute;
+			left: 30px;
+			top: 50%;
+			transform: translateY(-50%);
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			display: flex;
+			list-style: none;
+			li:first-child a{
+				padding-left: 0;
+			}
+		}
+	}
+	.logo{
+		margin-right: auto;
+		margin-left: 75px;
+		display: flex;
+		align-items: center;
+		position: relative;
+		&:hover img{
+			transform: scale(0);
+			/*transition: .5s;*/
+		}
+		span{
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			opacity: 0;
+			transform: scale(1) translate(-50%, -50%);
+			/*transition: .2s;*/
+		}
+		&:hover span{
+				display: flex;
+				align-items: center;
+				padding-bottom: 1px;
+				height: 35px;
+				top: -3px;
+				left: 0;
+				font-size: 38px;
+				letter-spacing: 5px;
+				text-transform: uppercase;
+				text-align: center;
+				opacity: 1;
+				transform: scale(1,1.3);
+				line-height: 1px;
+			}
+		
+		img{
+			transform: scale(1);
+			display: block;
+			width: 285px;
+			height: 35px;
+			padding: 0;
+		}
+	}
+}
+
+
+.content{
+	max-width: 930px;
+	margin: 0 auto;
+	&_text{
+		font-size: 20px;
+		font-weight: 300;
+	}
+	&_video{
+		max-width: 100%;
+		display: block;
+		margin: 0 auto 130px auto;
+	}
+}
+.espionage{
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 600px;
+	max-height: 600px;
+	margin-bottom: 70px;
+}
+.espionage{
+	background: url('../pictures/espionage_challenge_1.png') no-repeat center;
+}
+.desert{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-image: url('../pictures/espionage_challenge_2.png');
+	background-repeat: no-repeat;
+	background-position: 0 -290px;
+	background-size: cover;
+	height: 600px;
+	margin-bottom: 70px;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	padding: 80px;
+	font-family: 'NeueHaasUnicaPro', sens-serif;
+	.contact{
+		padding: 10px 20px;
+		border-right: 1px solid #fff;
+		font-size: 35px;
+	}
+	.email{
+		padding: 10px 20px;
+		font-size: 17px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+@import '_media';
